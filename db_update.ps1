@@ -3,7 +3,7 @@ add-pssnapin SqlServerProviderSnapin100;
 
 $sqltimeout = (60*60*3)
 $RECIPIENTCC = "DB.Update@some.local"
-$searchpath = "\\ra-fs04.rusalcohol.local\DB_update$\*.upd"
+$searchpath = "\\srv-fs04.some.local\DB_update$\*.upd"
 $touch = "\\srv-fs04.some.local\DB_update$\lastrun"
 
 set-content -Path $touch -Value ($null)
